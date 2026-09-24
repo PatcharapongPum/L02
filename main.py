@@ -20,7 +20,7 @@ def get_hit_count():
 @app.get("/")
 async def hello():
     count = get_hit_count()
-    return 'Hello World222! I have been seen {} times.\n'.format(count)
+    return f"We have met for {count} times".format(count)
 
 @app.get("/current")
 async def current():
