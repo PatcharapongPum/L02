@@ -21,7 +21,6 @@ def get_hit_count():
 async def hello():
     count = get_hit_count()
     return f"We have met for {count} times".format(count)
-
 @app.get("/current")
 async def current():
     current_count = cache.get('hits')
